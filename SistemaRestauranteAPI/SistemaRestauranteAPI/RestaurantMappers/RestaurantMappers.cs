@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using SistemaRestauranteAPI.Dtos.Categorias;
+using SistemaRestauranteAPI.Models;
 
 namespace SistemaRestauranteAPI.RestaurantMappers
 {
@@ -6,7 +8,7 @@ namespace SistemaRestauranteAPI.RestaurantMappers
     {
         public RestaurantMappers()
         {
-
+            CreateMap<Categorias, CategoriasDto>().ReverseMap();
         }
 
     }
